@@ -1,81 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Assignment 11 - Search Box</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
 
-<style>
-body{
-    margin:0;
-    font-family:Arial, sans-serif;
-    background:#f2f2f2;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-}
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
 
-.container{
-    background:white;
-    padding:40px;
-    border-radius:12px;
-    box-shadow:0 0 15px rgba(0,0,0,0.2);
-    text-align:center;
-}
+        body{
+            background:#f2f2f2;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+        }
 
-h1{
-    color:#333;
-    margin-bottom:25px;
-}
+        .login-box{
+            width:350px;
+            background:#fff;
+            padding:30px;
+            border-radius:10px;
+            box-shadow:0 0 15px rgba(0,0,0,0.2);
+        }
 
-form{
-    display:flex;
-    justify-content:center;
-    gap:10px;
-}
+        h2{
+            text-align:center;
+            margin-bottom:20px;
+            color:#333;
+        }
 
-input[type="text"]{
-    width:320px;
-    padding:12px;
-    font-size:16px;
-    border:1px solid #ccc;
-    border-radius:5px;
-}
+        input{
+            width:100%;
+            padding:12px;
+            margin:10px 0;
+            border:1px solid #ccc;
+            border-radius:5px;
+            font-size:16px;
+        }
 
-button{
-    padding:12px 20px;
-    background:#007BFF;
-    color:white;
-    border:none;
-    border-radius:5px;
-    cursor:pointer;
-    font-size:16px;
-}
+        button{
+            width:100%;
+            padding:12px;
+            background:#007BFF;
+            color:white;
+            border:none;
+            border-radius:5px;
+            font-size:16px;
+            cursor:pointer;
+        }
 
-button:hover{
-    background:#0056b3;
-}
-</style>
-
+        button:hover{
+            background:#0056b3;
+        }
+    </style>
 </head>
+
 <body>
 
-<div class="container">
+<div class="login-box">
 
-<h1>Search Box</h1>
+    <h2>Login</h2>
 
-<form action="https://formspree.io/f/xojaevjr" method="POST">
+    <!-- Replace YOUR_FORMSPREE_URL with your Formspree URL -->
+    <form action="YOUR_FORMSPREE_URL" method="POST">
 
-<input
-type="text"
-name="Search_Text"
-placeholder="Type anything here..."
-required>
+        <input
+            type="text"
+            name="Username"
+            placeholder="Enter Username"
+            required>
 
-<button type="submit">Search</button>
+        <input
+            type="password"
+            name="Password"
+            placeholder="Enter Password"
+            required>
 
-</form>
+        <button type="submit">Login</button>
+
+    </form>
 
 </div>
 
